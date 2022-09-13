@@ -7,7 +7,6 @@ import java.util.List;
 
 public class SequenceTime {
     public static void main(String[] args) throws IOException {
-        //String[] ArrayHoursCalendar1 = {"9:00","9:00","10:30","12:00","13:00","16:00","18:00","19:55"};
         String[] ArrayHoursCalendar1 = ReadJSON.getCalendar("src/main/json/calendar1.json");
         String[] ArrayHoursCalendar2 = ReadJSON.getCalendar("src/main/json/calendar2.json");
 
@@ -97,7 +96,7 @@ public class SequenceTime {
 
            if (currentThread==1){
                timeBeingCheckedThread1+=1;
-               if(calendarTime2.size()>(timeBeingCheckedThread2)) {
+               if(calendarTime1.size()>(timeBeingCheckedThread1)) {
                    checkTime = (calendarTime1.get(timeBeingCheckedThread1).compareTo(calendarTime2.get(timeBeingCheckedThread2)));
                    if (checkTime < 0) {
                        lastChecked = calendarTime1.get(timeBeingCheckedThread1);
