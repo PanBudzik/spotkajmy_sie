@@ -1,2 +1,2 @@
-# spotkajmy_sie
+# Spotkajmy się!
 Sync meetings with your partner
